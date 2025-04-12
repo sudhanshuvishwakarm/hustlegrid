@@ -1,6 +1,6 @@
 'use client'
-import SearchStartup from '@/Components/SearchStartup';
-import Startups from '@/Components/Startups';
+import SearchStartup from '../Components/SearchStartup';
+import Startups from '../Components/Startups';
 import React, { useState } from 'react'
 
 const Page = () => {
