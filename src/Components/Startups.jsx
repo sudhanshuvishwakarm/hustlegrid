@@ -59,7 +59,7 @@ const dummyData = [
     title: 'Sustainable Fashion Startup',
     description: 'Eco-friendly clothing made with love and sustainability.',
     category: 'Fashion',
-    image: 'https://assets.bosch.com/media/global/stories/technology_report_tech_compass_2024/tech-compass-2024-stage.jpg',
+    image: 'https://cdn.techinasia.com/wp-content/uploads/2021/07/1626143867_2f0f43c98db1689a720bbab64152fc03_v1626143866_xlarge.webp',
     views: 96,
     _createdAt: '2025-04-11',
     author: {
