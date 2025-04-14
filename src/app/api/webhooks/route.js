@@ -17,7 +17,7 @@ export async function POST(req) {
           first_name,
           last_name,
           image_url,
-          email_addresses,
+          email_addresses?.[0]?.email_address,
           username
         )
         return new Response('User created or updated successfully',{
@@ -41,7 +41,7 @@ export async function POST(req) {
         console.log("route error in deleting user -",error);
         return new Response('User deleting failed',{
           status:400
-        })
+        })  
       }
 
     }

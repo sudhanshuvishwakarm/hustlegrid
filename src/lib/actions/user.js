@@ -19,8 +19,7 @@ export const createOrUpdateUser = async (id,
                     lastName: last_name,
                     avatar: image_url,
                     userName: username,
-                    email: email_addresses[0].email,
-
+                    email: email_addresses,
                 }
             },
             { new: true, upsert: true }
@@ -35,7 +34,8 @@ export const createOrUpdateUser = async (id,
 export const deleteUser=async(id)=>{
    try {
     await connect_db();
-    await User.findByIdAndDelete({clerrkId:id})
+    const deleted = await User.findOneAndDelete({ clerkId: id })
+    return deleted    
    } catch (error) {
     console.log("action delete user error -",error);
    }
