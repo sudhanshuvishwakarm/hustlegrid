@@ -1,5 +1,5 @@
 import { verifyWebhook } from '@clerk/nextjs/webhooks'
-import {createOrUpdateUser, deleteUser} from '../../../lib/actions/user.js'
+import { createOrUpdateUser, deleteUser } from '../../../lib/actions/user.js'
 export async function POST(req) {
   try {
     const evt = await verifyWebhook(req)

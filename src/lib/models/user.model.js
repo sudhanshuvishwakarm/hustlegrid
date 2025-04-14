@@ -1,6 +1,4 @@
-import mongoose, { model } from "mongoose";
-import { unique } from "next/dist/build/utils";
-
+import mongoose from "mongoose";
 const userSchema = new mongoose.Schema({
     clerkId: {
         type: String,
