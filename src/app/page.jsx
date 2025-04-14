@@ -17,7 +17,7 @@ const Page = () => {
   };
 
   return (
-    <div className='text-red-900 text-3xl font-bold text-center'>
+    <div className='text-red-900 text-3xl pt-20 font-bold text-center'>
       <section className='pink_container'>
         <h1 className='heading'>
           Pitch Your Startup, <br />
